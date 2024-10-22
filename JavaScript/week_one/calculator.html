@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cal.css">
+
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <div class="screen" id="screen" onchange="setScreenText()"><p id="screenValue">|</p></div>
+    <div class="seperator">
+        <button id="reset" onclick="buttonReset()"> Reset</button>
+        <button id="reset" onclick="buttonDelete()"> Delete</button>
+    </div>
+    <div class="keyboard">
+        <div id="1" class="btn" onclick="buttonOne()">1</div>
+        <div id="2" class="btn" onclick="buttonTwo()">2</div>
+        <div id="3" class="btn" onclick="buttonThree()">3</div>
+        <div id="4" class="btn" onclick="buttonFour()">4</div>
+        <div id="5"  class="btn" onclick="buttonFive()">5</div>
+        <div id="6" class="btn" onclick="buttonSix()">6</div>
+        <div id="7" class="btn" onclick="buttonSeven()">7</div>
+        <div id="8" class="btn" onclick="buttonEight()">8</div>
+        <div id="9" class="btn" onclick="buttonNine()">9</div>
+        <div id="0" class="btn" onclick="buttonZero()">0</div>
+
+        <div id="div" class="btn" onclick="buttonDiv()">/</div>
+        <div id="sub" class="btn" onclick="buttonMinus()">-</div>
+        <div id="point" class="btn" onclick="buttonPoint()"><div id="poitD"></div></div>
+        <div id="add" class="btn" onclick="buttonAdd()">+</div>
+
+        <div id="mul" class="btn" onclick="buttonMult()">*</div>
+        <div id="modu" class="btn" onclick="buttonModu()">%</div>
+        <div id="equall" class="btn" onclick="equalbtn()">=</div>
+        <!-- //<div id="reset" class="btn" onclick="buttonReset()">@</div> -->
+    </div>
+</div>    
+<script src="calculator.js"></script>
+</body>
+</html>
