@@ -60,7 +60,7 @@ def edit_contact():
 def delete_contact(contact):
     for all_contact in  contact_book:
         if all_contact['contact'] == contact:
-            contact_book.pop(all_contact)
+            contact_book.remove(all_contact)
         else:
             print('Contact not available')
 
